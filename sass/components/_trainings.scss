@@ -1,0 +1,80 @@
+.trainings {
+  background: $gradient-red;
+  padding-top: 35px;
+
+  &__container {
+    @extend .container;
+    padding: 35px 15px 10px;
+  }
+}
+
+.program {
+  &__title {
+    @extend .item-title;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: none;
+  }
+
+  &__text {
+    @extend .section-text;
+    margin-bottom: 25px;
+  }
+}
+
+.program__list {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 25px;
+
+  & li {
+    padding-left: 5px;
+  }
+}
+
+.price {
+  &__container {
+    background-color: $background-color;
+  }
+
+  &__title {
+    @extend .section-title;
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  &__link {
+    display: block;
+    @extend .white-text;
+    width: max-content;
+    padding: 10px 35px;
+    margin-top: 15px;
+    background-color: $background-color;
+    border-radius: 10px;
+  }
+}
+
+.price__list {
+  background: $gradient-blue;
+  padding: 30px 15px 10px;
+
+  & li {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  & li::after {
+    @extend %line;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: $background-color;
+  }
+
+  & .text {
+    @extend .section-text;
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+}

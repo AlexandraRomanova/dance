@@ -1,0 +1,8 @@
+.insta {
+  background-color: $background-color;
+
+  &__title {
+    @extend .footer__title;
+    width: 265px;
+  }
+}

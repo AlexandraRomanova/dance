@@ -1,0 +1,89 @@
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  width: 320px;
+  margin: $center-margin;
+}
+
+img {
+  display: block;
+  width: 320px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: $center-margin;
+  padding: 35px 8px 40px;
+}
+
+// TITLE
+
+.section-title {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $white-color;
+  text-shadow: $shadow-black;
+}
+
+.item-title {
+  font-weight: bold;
+  color: $black-color;
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  text-shadow: $shadow-white;
+}
+
+.footer__title {
+  color: $footer-color;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+// TEXT
+
+.section-text {
+  font-size: 15px;
+  color: $black-color;
+  margin: 0;
+  line-height: 1.9;
+  text-align: left;
+}
+
+.white-text {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  width: 245px;
+  margin: $center-margin;
+}
+
+// LINE
+
+%line {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-radius: 2px;
+}

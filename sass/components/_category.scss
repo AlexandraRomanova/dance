@@ -1,0 +1,17 @@
+.category {
+  background: $gradient-red;
+
+  &__container {
+    padding: 35px 0 40px;
+    margin: 0;
+  }
+
+  &__list {
+    margin-top: 40px;
+  }
+
+  &__descr {
+    padding: 0 10px;
+    margin: 45px 0;
+  }
+}

@@ -1,0 +1,37 @@
+.coaches {
+  background: $gradient-red;
+
+  &__container {
+    @extend .container;
+    padding: 30px 0 15px;
+  }
+
+  &__text {
+    @extend .section-text;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__span {
+    font-style: italic;
+  }
+
+  &__descr {
+    font-size: 15px;
+    color: $white-color;
+    text-align: center;
+    padding: 0 15px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.description {
+  padding: 0 15px;
+  margin-bottom: 40px;
+
+  &__title {
+    @extend .item-title;
+    margin-top: 20px;
+  }
+}

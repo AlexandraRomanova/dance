@@ -1,0 +1,68 @@
+.scroll {
+  background: $gradient-red;
+
+  &__container {
+    background-color: $pink-color;
+    border: 1px solid $black-color;
+    border-radius: 20px;
+    width: 250px;
+    padding: 10px;
+    margin: $center-margin;
+    margin-top: 27px;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    @extend .section-text;
+    width: 205px;
+    text-align: center;
+    margin: $center-margin;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    display: block;
+    width: max-content;
+    color: $black-color;
+    font-size: 17px;
+    text-align: center;
+    padding: 7px 12px;
+    margin: $center-margin;
+    border-radius: 20px;
+    border: 1px solid $black-color;
+    background-color: $violet-color;
+  }
+}
+
+.scroll__span {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  color: $white-color;
+  text-align: center;
+  margin-bottom: 40px;
+
+  &--invite {
+    font-size: 17px;
+    color: $black-color;
+  }
+}
+
+.wrapper {
+  list-style: disc;
+  padding-left: 30px;
+
+  & li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  &__text {
+    @extend .section-text;
+  }
+
+  &__span {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
