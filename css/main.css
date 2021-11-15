@@ -929,7 +929,6 @@ ul {
 }
 
 .category__list img {
-  display: block;
   object-position: 100% -17px;
 }
 
@@ -937,6 +936,19 @@ ul {
   .category__list img {
     width: 394px;
     height: 430px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .category__list img {
+    width: 570px;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .category__list .item-title, .category__list .feature__title, .category__list .program__title, .category__list .description__title {
+    margin-top: 100px;
   }
 }
 
