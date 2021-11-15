@@ -23,6 +23,30 @@
     padding: 0 15px;
     margin: 0;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  & ul {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+
+  & .item {
+    @media screen and (min-width: 768px) {
+      width: 350px;
+    }
+  }
+
+  &__image {
+    @media screen and (min-width: 768px) {
+      height: 460px;
+    }
   }
 }
 
@@ -33,5 +57,15 @@
   &__title {
     @extend .item-title;
     margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  & .section-text {
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
   }
 }
