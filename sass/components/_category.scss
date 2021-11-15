@@ -47,3 +47,9 @@
     height: 430px;
   }
 }
+
+.category__list {
+  & .section-text {
+    font-size: 15px;
+  }
+}

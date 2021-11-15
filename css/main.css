@@ -940,6 +940,10 @@ ul {
   }
 }
 
+.category__list .section-text, .category__list .scroll__text, .category__list .wrapper__text, .category__list .features__text, .category__list .features__descr, .category__list .feature__text, .category__list .about__text, .category__list .about__descr, .category__list .program__text, .category__list .price__list .text, .price__list .category__list .text, .category__list .coaches__text {
+  font-size: 15px;
+}
+
 .insta {
   background-color: #1b1b1b;
 }
