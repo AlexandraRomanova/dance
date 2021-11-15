@@ -1,5 +1,8 @@
 .about {
   background: $gradient-red;
+  @media screen and (min-width: 1024px) {
+    padding: 55px 0;
+  }
 
   &__container {
     @extend .container;
@@ -9,6 +12,13 @@
   &__text {
     @extend .section-text;
     margin-bottom: 15px;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 .footer {
   background-color: $background-color;
-  padding: 25px 0 15px;
+  padding: 25px 0 5px;
 }
 
 .footer__link {
@@ -10,30 +10,35 @@
   text-align: center;
   margin-bottom: 20px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
   &:nth-child(2) {
     margin-bottom: 10px;
   }
 
   &--place {
     font-size: 17px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
   }
 }
 
 .map {
-  width: $main-width;
+  width: 100%;
   display: block;
 }
 
 .copyright {
-  font-size: 14px;
-  color: $footer-color;
-  text-align: center;
+  @extend .footer__link;
   margin: 0;
   margin-bottom: 7px;
 }
 
 .dev {
   @extend .copyright;
-  display: block;
-  font-size: 12px;
+  margin: 15px 0;
 }

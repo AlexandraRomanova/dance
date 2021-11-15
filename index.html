@@ -16,13 +16,47 @@
                         <img class="logo__image" src="./images/logo.jpg" alt="Логотип">
                     </a>
                     <a class="logo__text" href="./index.html">Каскад Dance</a>
-                </div>
+
+                    <button 
+                    type="button" 
+                    class="menu-button"
+                    aria-label="Переключатель мобильного меню"
+                    aria-expanded="false"
+                    >
+                        <svg width="40" height="40">
+                            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                            <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                </div> 
+
                 <div class="nav-content">
                     <div class="auth-nav">
                         <a class="auth-nav__tel" href="tel:+380683430991">+38 (068) 343-09-91</a>
                         <a class="auth-nav__tel" href="tel:+380675602484">+38 (067) 560-24-84</a>
                     </div>
-                    <div class="site-nav">
+
+                    <div class="menu-container">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="used-link" href="./index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a href="./html/about.html">О нас</a>
+                            </li>
+                            <li>
+                                <a href="./html/trainings.html">Занятия</a>
+                            </li>
+                            <li>
+                                <a href="./html/coaches.html">Тренера</a>
+                            </li>
+                            <li>
+                                <a href="./html/contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
                         <ul class="icons icons--site">
                             <li class="icons__item">
                                 <a href="https://www.instagram.com/tsk.kaskad/">
@@ -50,8 +84,7 @@
                     <video 
                     class="video" 
                     src="./video.mp4" 
-                    poster="./images/cover.jpg"
-                    width="320"
+                    width="100%"
                     autoplay 
                     muted 
                     loop       
@@ -97,7 +130,7 @@
                 </p>
                 <span class="scroll__span">ДОБРО ПОЖАЛОВАТЬ К НАМ!</span>
                 <span class="scroll__span scroll__span--invite">Приглашаем детей <br/> в возрасте от 4-х лет!</span>
-                <a class="scroll__link" href="">Записаться на пробное занятие</a>
+                <a class="main-button" href="./html/contacts.html">Записаться на пробное занятие</a>
             </div>
         </section>
 
@@ -157,7 +190,9 @@
                 <h2 class="section-title">НАПРАВЛЕНИЯ</h2>
                 <ul class="category__list">
                     <li>
-                        <img src="./images/kids.jpg" alt="ДЕТИ">
+                        <div>
+                            <img src="./images/kids.jpg" alt="ДЕТИ">
+                        </div>
                         <div class="category__descr">
                             <h3 class="item-title">ДЕТИ</h3>
                             <p class="section-text">Мы приглашаем юных дарований попробовать себя в таком непростом, но при этом невероятно
@@ -167,7 +202,9 @@
                         </div>
                     </li>
                     <li>
-                        <img src="./images/adults-1.jpeg" alt="ВЗРОСЛЫЕ">
+                        <div>
+                            <img src="./images/adults-1.jpeg" alt="ВЗРОСЛЫЕ">
+                        </div>
                         <div class="category__descr">
                             <h3 class="item-title">ВЗРОСЛЫЕ</h3>
                             <p class="section-text">Мы приглашаем всех без исключения энтузиастов, которые чувствуют в себе силы и желание
@@ -179,7 +216,9 @@
                         </div>
                     </li>
                     <li>
-                        <img src="./images/adults-2.jpg" alt="PRO-AM">
+                        <div>
+                            <img src="./images/adults-2.jpg" alt="PRO-AM">
+                        </div>
                         <div class="category__descr">
                             <h3 class="item-title">PRO-AM</h3>
                             <p class="section-text">Pro-Am (Professional - Amateur) - это танцевальное направление, в котором профессионал танцует
@@ -196,8 +235,8 @@
 
         <section class="insta">
             <div class="container">
-                <h2 class="insta__title">ПОДПИСЫВАЙТЕСЬ НА НАШ ИНСТАГРАМ</h2>
-                <a class="scroll__link" href="https://www.instagram.com/tsk.kaskad/">@tsk.kaskad</a>
+                <h2 class="insta__title">ПОДПИСЫВАЙТЕСЬ <br> НА НАШ ИНСТАГРАМ</h2>
+                <a class="main-button" href="https://www.instagram.com/tsk.kaskad/">@tsk.kaskad</a>
             </div>
         </section>
         <!-- <section> -->
@@ -232,7 +271,8 @@
             </li>
         </ul>
         <p class="copyright">&#169 2021 Каскад Dance</p>
-        <a class="dev" href="">Разработка сайта</a>
+        <a class="dev" href="https://t.me/Aleksandra_Romanova_frontend">Разработка сайта</a>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

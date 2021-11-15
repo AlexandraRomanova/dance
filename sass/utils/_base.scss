@@ -1,13 +1,18 @@
 body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
-  width: 320px;
-  margin: $center-margin;
+  margin: 0;
+}
+
+.menu-open {
+  overflow: hidden;
 }
 
 img {
   display: block;
-  width: 320px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -24,6 +29,18 @@ ul {
 .container {
   margin: $center-margin;
   padding: 35px 8px 40px;
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
+
+  // @media screen and (min-width: 1140px) {
+  //   width: 1140px;
+  // }
 }
 
 // TITLE
@@ -32,10 +49,13 @@ ul {
   font-weight: 600;
   font-size: 22px;
   margin: 0;
-  margin-bottom: 20px;
   text-align: center;
   color: $white-color;
   text-shadow: $shadow-black;
+
+  @media screen and (min-width: 768px) {
+    font-size: 33px;
+  }
 }
 
 .item-title {
@@ -43,9 +63,14 @@ ul {
   color: $black-color;
   font-size: 20px;
   padding: 0;
+  margin: 0;
   margin-bottom: 20px;
   text-align: left;
   text-shadow: $shadow-white;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
 }
 
 .footer__title {
@@ -54,10 +79,13 @@ ul {
   font-size: 26px;
   text-align: center;
   margin: 0;
-  width: 280px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 // TEXT
@@ -76,6 +104,11 @@ ul {
   color: #fff;
   width: 245px;
   margin: $center-margin;
+
+  @media screen and (min-width: 768px) {
+    font-size: 19px;
+    width: 370px;
+  }
 }
 
 // LINE
@@ -86,4 +119,25 @@ ul {
   position: absolute;
   height: 1px;
   border-radius: 2px;
+}
+
+// BUTTON
+
+.main-button {
+  display: block;
+  width: max-content;
+  color: $black-color;
+  font-size: 17px;
+  text-align: center;
+  padding: 7px 12px;
+  margin: $center-margin;
+  border-radius: 20px;
+  border: 1px solid $black-color;
+  background-color: $violet-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
 }

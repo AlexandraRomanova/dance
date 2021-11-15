@@ -12,18 +12,48 @@
         <div class="header-content">
             <nav>
                 <div class="logo">
-                    <a class="link" href="../index.html">
+                    <a href="../index.html">
                         <img class="logo__image" src="../images/logo.jpg" alt="Логотип">
                     </a>
                     <a class="logo__text" href="../index.html">Каскад Dance</a>
+    
+                    <button type="button" class="menu-button" aria-label="Переключатель мобильного меню"
+                        aria-expanded="false">
+                        <svg width="40" height="40">
+                            <use class="icon-menu" href="../images/symbol-defs.svg#icon-menu"></use>
+                            <use class="icon-cross" href="../images/symbol-defs.svg#icon-cross"></use>
+                        </svg>
+                    </button>
                 </div>
+    
                 <div class="nav-content">
                     <div class="auth-nav">
                         <a class="auth-nav__tel" href="tel:+380683430991">+38 (068) 343-09-91</a>
                         <a class="auth-nav__tel" href="tel:+380675602484">+38 (067) 560-24-84</a>
                     </div>
-                    <div class="site-nav">
-                        <ul class="icons icons--site list">
+    
+                    <div class="menu-container">
+                        <ul class="menu__list">
+                            <li>
+                                <a href="../index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a href="./about.html">О нас</a>
+                            </li>
+                            <li>
+                                <a class="used-link" href="./trainings.html">Занятия</a>
+                            </li>
+                            <li>
+                                <a href="./coaches.html">Тренера</a>
+                            </li>
+                            <li>
+                                <a href="./contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <ul class="icons icons--site">
                             <li class="icons__item">
                                 <a href="https://www.instagram.com/tsk.kaskad/">
                                     <svg class="icon">
@@ -49,9 +79,8 @@
                 <h1 class="section-title">ПРОГРАММА <br/> СПОРТИВНО-БАЛЬНЫХ ТАНЦЕВ</h1>
                 <ul class="program">
                     <li>
-                        <h2 class="program__title">ЛАТИНОАМЕРИКАНСКАЯ ПРОГРАММА</h2>
-                        <img src="../images/latina.jpg" alt="ЛАТИНОАМЕРИКАНСКАЯ ПРОГРАММА">
-                       <div class="trainings__container">
+                        <div class="trainings__container">
+                           <h2 class="program__title">ЛАТИНОАМЕРИКАНСКАЯ ПРОГРАММА</h2>
                             <p class="program__text">Латина включает в себя 5 видов:</p>
                             <ul class="program__list">
                                 <li>Самба</li>
@@ -66,11 +95,13 @@
                                 ведь у танцоров в этом виде больше возможностей для экспериментов.
                             </p>
                        </div>
+                       <div>
+                        <img src="../images/latina.jpg" alt="ЛАТИНОАМЕРИКАНСКАЯ ПРОГРАММА">
+                       </div>
                     </li>
                     <li>
-                        <h2 class="program__title">ЕВРОПЕЙСКАЯ ПРОГРАММА</h2>
-                        <img src="../images/standart.jpg" alt="ЕВРОПЕЙСКАЯ ПРОГРАММА">
                         <div class="trainings__container">
+                            <h2 class="program__title">ЕВРОПЕЙСКАЯ ПРОГРАММА</h2>
                             <p class="program__text">Стандарт включает в себя 5 видов:</p>
                             <ul class="program__list">
                                 <li>Медленный Вальс</li>
@@ -85,11 +116,13 @@
                                 платье, а партнёр во фраке.
                             </p>
                         </div>
+                        <div>
+                            <img src="../images/standart.jpg" alt="ЕВРОПЕЙСКАЯ ПРОГРАММА">
+                        </div>
                     </li>
                 </ul>
         </section>
         <section class="price">
-            <div class="price__container">
             <h2 class="price__title">ПРАЙС-ЛИСТ</h2>
                 <ul class="price__list">
                     <li>
@@ -100,7 +133,7 @@
                             Итоговая цена зависит от количества занятий в неделю, и выбора
                             между разовой оплатой или абонементом
                         </p>
-                        <a class="price__link" href="">Записаться</a>
+                        <a class="price__link" href="./contacts.html">Записаться</a>
                     </li>
                     <li>
                         <h3 class="item-title">ИНДИВИДУАЛЬНЫЕ</h3>
@@ -112,7 +145,7 @@
                         <p class="text">
                             Итоговая цена зависит от длительности индивидуального урока
                         </p>
-                        <a class="price__link" href="">Записаться</a>
+                        <a class="price__link" href="./contacts.html">Записаться</a>
                     </li>
                     <li>
                         <h3 class="item-title">PRO-AM</h3>
@@ -123,10 +156,9 @@
                         <p class="text">
                             Итоговая цена зависит от длительности индивидуального урока
                         </p>
-                        <a class="price__link" href="">Записаться</a>
+                        <a class="price__link" href="./contacts.html">Записаться</a>
                     </li>
                 </ul>
-            </div>
         </section>
                 <!-- <section> -->
                 <!-- ФОТОГАЛЕРЕЯ -->
@@ -160,5 +192,6 @@
         <p class="copyright">&#169 2021 Каскад Dance</p>
         <a class="dev" href="">Разработка сайта</a>
     </footer>
+    <script src="../js/menu.js"></script>
 </body>
 </html>

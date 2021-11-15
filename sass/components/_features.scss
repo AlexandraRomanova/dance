@@ -5,13 +5,26 @@
     @extend .section-text;
     text-align: center;
     margin-top: 15px;
+
+    @media screen and (min-width: 768px) {
+      width: 750px;
+      margin-top: 20px;
+    }
   }
 
   &__list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 35px 0;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__descr {
@@ -20,19 +33,32 @@
     font-style: italic;
     text-align: center;
     text-shadow: $shadow-text;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
   }
 }
 
 .feature {
-  width: 260px;
-  padding: 40px 12px;
-  margin-bottom: 35px;
   background-color: $pink-color;
   border: 1px solid $black-color;
   border-radius: 20px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    padding: 40px 12px;
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 20px) / 2);
+    padding: 50px 25px;
+    margin: 20px;
   }
 
   &__title {
@@ -44,6 +70,10 @@
     @extend .section-text;
     text-align: center;
     font-size: 13px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 15px;
+    }
   }
 
   &__icon {
@@ -54,5 +84,10 @@
     margin: $center-margin;
     margin-bottom: 50px;
     margin-top: 15px;
+
+    @media screen and (min-width: 768px) {
+      width: 45px;
+      height: 45px;
+    }
   }
 }
