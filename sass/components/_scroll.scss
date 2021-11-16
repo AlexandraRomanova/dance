@@ -1,6 +1,10 @@
 .scroll {
   background: $gradient-red;
 
+  & .container {
+    padding-bottom: 10px;
+  }
+
   &__container {
     background-color: $pink-color;
     border: 1px solid $black-color;

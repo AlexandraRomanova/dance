@@ -701,6 +701,10 @@ ul {
   background: linear-gradient(#f64f59, #c471ed, #12c2e9);
 }
 
+.scroll .container, .scroll .about__container, .scroll .trainings__container, .scroll .coaches__container {
+  padding-bottom: 10px;
+}
+
 .scroll__container {
   background-color: thistle;
   border: 1px solid #000;
@@ -1261,6 +1265,10 @@ ul {
   }
 }
 
+.coaches__image {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .coaches__image {
     height: 460px;
@@ -1274,6 +1282,9 @@ ul {
 
 .description__title {
   margin-top: 20px;
+  position: absolute;
+  bottom: 3px;
+  left: 45px;
 }
 
 @media screen and (min-width: 768px) {
