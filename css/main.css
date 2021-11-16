@@ -713,7 +713,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .scroll__container {
-    width: 400px;
+    width: 410px;
     padding: 18px;
   }
 }
@@ -841,7 +841,7 @@ ul {
 @media screen and (max-width: 767px) {
   .feature {
     width: 280px;
-    padding: 40px 12px;
+    padding: 10px 12px;
     margin-bottom: 35px;
   }
   .feature:last-child {
@@ -859,6 +859,7 @@ ul {
 
 .feature__title {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .feature__text {
@@ -878,7 +879,7 @@ ul {
   fill: #000;
   display: block;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   margin-top: 15px;
 }
 
