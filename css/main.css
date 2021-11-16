@@ -470,6 +470,7 @@ ul {
 
 .nav-content:before {
   width: 100%;
+  top: 0;
   background-color: #fff;
 }
 
@@ -841,7 +842,7 @@ ul {
 @media screen and (max-width: 767px) {
   .feature {
     width: 280px;
-    padding: 10px 12px;
+    padding: 10px 12px 18px;
     margin-bottom: 35px;
   }
   .feature:last-child {
@@ -852,7 +853,7 @@ ul {
 @media screen and (min-width: 768px) {
   .feature {
     width: calc((100% - 4 * 20px) / 2);
-    padding: 50px 25px;
+    padding: 20px 25px 25px;
     margin: 20px;
   }
 }
@@ -860,6 +861,12 @@ ul {
 .feature__title {
   text-align: center;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__title {
+    margin-bottom: 15px;
+  }
 }
 
 .feature__text {
@@ -887,6 +894,7 @@ ul {
   .feature__icon {
     width: 45px;
     height: 45px;
+    margin-bottom: 20px;
   }
 }
 
@@ -905,8 +913,12 @@ ul {
 
 @media screen and (min-width: 768px) {
   .category__list {
-    margin-top: 70px;
+    margin-top: 40px;
   }
+}
+
+.category__wrapper {
+  position: relative;
 }
 
 .category__descr {
@@ -954,6 +966,13 @@ ul {
   }
 }
 
+.category__list .item-title, .category__list .feature__title, .category__list .program__title, .category__list .description__title {
+  position: absolute;
+  font-size: 25px;
+  bottom: 3px;
+  left: 45px;
+}
+
 @media screen and (min-width: 1024px) {
   .category__list .item-title, .category__list .feature__title, .category__list .program__title, .category__list .description__title {
     margin-top: 100px;
@@ -962,6 +981,7 @@ ul {
 
 .category__list .section-text, .category__list .scroll__text, .category__list .wrapper__text, .category__list .features__text, .category__list .features__descr, .category__list .feature__text, .category__list .about__text, .category__list .about__descr, .category__list .program__text, .category__list .price__list .text, .price__list .category__list .text, .category__list .coaches__text {
   font-size: 15px;
+  text-align: center;
 }
 
 .insta {
