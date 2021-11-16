@@ -704,7 +704,7 @@ ul {
   background-color: thistle;
   border: 1px solid #000;
   border-radius: 20px;
-  width: 285px;
+  width: 300px;
   padding: 10px;
   margin: 0 auto;
   margin-top: 27px;
@@ -770,6 +770,7 @@ ul {
 
 .wrapper__text {
   font-size: 14px;
+  line-height: 1.7;
 }
 
 @media screen and (min-width: 768px) {
