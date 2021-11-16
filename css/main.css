@@ -708,7 +708,6 @@ ul {
   width: 300px;
   padding: 10px;
   margin: 0 auto;
-  margin-top: 27px;
   margin-bottom: 45px;
 }
 
@@ -922,7 +921,7 @@ ul {
 }
 
 .category__descr {
-  padding: 15px 10px 0;
+  padding: 0 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -971,9 +970,6 @@ ul {
   font-size: 25px;
   bottom: 3px;
   left: 45px;
-  background-color: violet;
-  padding: 1px 10px;
-  border-radius: 25px;
 }
 
 @media screen and (min-width: 1024px) {
