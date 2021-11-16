@@ -1265,11 +1265,6 @@ ul {
   }
 }
 
-.coaches__image {
-  position: relative;
-  margin-bottom: 20px;
-}
-
 @media screen and (min-width: 768px) {
   .coaches__image {
     height: 460px;
@@ -1283,9 +1278,6 @@ ul {
 
 .description__title {
   margin-top: 20px;
-  position: absolute;
-  bottom: 3px;
-  left: 45px;
 }
 
 @media screen and (min-width: 768px) {
