@@ -25,6 +25,10 @@
       padding: 50px 30px;
       height: 430px;
     }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 19px;
+    }
   }
 }
 

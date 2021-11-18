@@ -938,6 +938,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .category__descr {
+    font-size: 19px;
+  }
+}
+
 .category__list li {
   margin-bottom: 60px;
 }
@@ -1380,6 +1386,8 @@ ul {
 }
 
 .dev {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
   margin: 15px 0;
 }
 /*# sourceMappingURL=main.css.map */
