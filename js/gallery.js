@@ -41,8 +41,8 @@ const buttonRight = document.querySelector(".js-right");
 const buttonLeft = document.querySelector(".js-left");
 
 gallery.addEventListener("click", onChangeImage);
-buttonRight.addEventListener("click", onRightNext);
-buttonLeft.addEventListener("click", onLeftNext);
+// buttonRight.addEventListener("click", onRightNext);
+// buttonLeft.addEventListener("click", onLeftNext);
 
 function onChangeImage(event) {
     event.preventDefault();
@@ -56,20 +56,20 @@ function onChangeImage(event) {
     largeImg.alt = galleryLink.title;
 }
 
-function onRightNext() {
-    const galleryItem = document.querySelector(".gallery__image");
-    const activeImage = largeImg.src;
+// function onRightNext() {
+//     const galleryItem = document.querySelector(".gallery__image");
+//     const activeImage = largeImg.src;
 
-    let index = activeImage ? activeImage : 0;
+//     let index = activeImage ? activeImage : 0;
 
-    if (index < gallery.length - 1) {
-        index += 1;
-    } else {
-        index = 0;
-    }
+//     if (index < gallery.length - 1) {
+//         index += 1;
+//     } else {
+//         index = 0;
+//     }
 
-    largeImg.src = galleryItem[index];
-    largeImg.alt = galleryItem[index];
+//     largeImg.src = galleryItem[index];
+//     largeImg.alt = galleryItem[index];
 
     // const activeImage = items.findIndex(
     //     img => img.original === lightboxImageRef.src
@@ -84,7 +84,7 @@ function onRightNext() {
     // }
     // largeImg.src = items[index];
     // largeImg.alt = items[index];
-}
+// }
 
-function onLeftNext(event) {   
-}
+// function onLeftNext(event) {   
+// }
