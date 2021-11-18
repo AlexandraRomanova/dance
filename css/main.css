@@ -1000,7 +1000,13 @@ ul {
 }
 
 .largeImg {
-  height: 400px;
+  height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .largeImg {
+    height: 945px;
+  }
 }
 
 .largeImg__wrapper {

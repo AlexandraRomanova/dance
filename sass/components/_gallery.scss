@@ -4,7 +4,11 @@
 }
 
 .largeImg {
-  height: 400px;
+  height: 500px;
+
+  @media screen and (min-width: 768px) {
+    height: 945px;
+  }
 
   &__wrapper {
     position: relative;
