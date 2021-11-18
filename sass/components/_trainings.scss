@@ -25,14 +25,12 @@
     text-align: center;
     margin-bottom: 25px;
     text-shadow: none;
-
-    @media screen and (min-width: 768px) {
-      margin-top: 100px;
-    }
   }
 
   &__text {
     @extend .section-text;
+    font-size: 15px;
+
     @media screen and (min-width: 768px) {
       text-align: center;
     }
@@ -149,6 +147,7 @@
     @extend .section-text;
     padding-left: 15px;
     margin-top: 20px;
+    font-size: 15px;
   }
 
   & .item-title,

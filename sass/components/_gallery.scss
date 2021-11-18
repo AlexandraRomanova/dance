@@ -1,0 +1,30 @@
+.gallery {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.largeImg {
+  height: 400px;
+
+  &__wrapper {
+    position: relative;
+  }
+}
+
+.button__arrow {
+  @extend %button;
+  position: absolute;
+  top: 45%;
+
+  & svg {
+    fill: $white-color;
+  }
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+}

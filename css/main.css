@@ -385,6 +385,13 @@ ul {
   border-radius: 2px;
 }
 
+.menu-button, .button__arrow {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
 .main-button {
   display: block;
   width: max-content;
@@ -516,11 +523,7 @@ ul {
 
 .menu-button {
   display: inline-flex;
-  margin: 0;
   margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
   z-index: 5;
 }
 
@@ -702,7 +705,7 @@ ul {
 }
 
 .scroll .container, .scroll .about__container, .scroll .trainings__container, .scroll .coaches__container {
-  padding-bottom: 10px;
+  padding: 35px 0 10px;
 }
 
 .scroll__container {
@@ -991,6 +994,36 @@ ul {
   background-color: #1b1b1b;
 }
 
+.gallery {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.largeImg {
+  height: 400px;
+}
+
+.largeImg__wrapper {
+  position: relative;
+}
+
+.button__arrow {
+  position: absolute;
+  top: 45%;
+}
+
+.button__arrow svg {
+  fill: #fff;
+}
+
+.button__arrow--left {
+  left: 0;
+}
+
+.button__arrow--right {
+  right: 0;
+}
+
 .about {
   background: linear-gradient(#f64f59, #c471ed, #12c2e9);
 }
@@ -1066,10 +1099,8 @@ ul {
   text-shadow: none;
 }
 
-@media screen and (min-width: 768px) {
-  .program__title {
-    margin-top: 100px;
-  }
+.program__text {
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1199,6 +1230,7 @@ ul {
 .price__list .text {
   padding-left: 15px;
   margin-top: 20px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
